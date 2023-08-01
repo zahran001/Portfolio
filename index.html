@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body{
+            background-color: darkslateblue;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 65px;
+            background-color: blueviolet;
+            
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0px 30px;
+
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+
+        }
+        nav ul li a:hover{
+            color: black;
+
+        }
+        main hr{
+            border: 0;
+            background: white;
+            height: 1.0px;
+            margin: 20px 30px;
+        }
+        .left{
+            font-size: 2.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* margin: 80px 0px; */
+        }
+        .firstSection > div{
+           width: 30%;
+          
+        }
+        .leftSection{
+            font-size: 2.55rem;
+            
+        }
+        .rightSection img{
+            width: 95%;
+            margin: 40px;
+
+        }
+        .white{
+            color: aqua;
+        }
+        .gray{
+            color: gray;
+
+        }
+        #element{
+            color: aqua;
+        }
+        #element:hover {
+        color: red; 
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondSection h1{
+            font-size: 1.8rem;
+        }
+        .secondSection .box{
+            background: white;
+            width: 84vw;
+            height: 2px;
+            margin: 55px 0px;
+            display: flex;
+
+        }
+        .secondSection .vertical{
+            height: 90px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 110px;
+        }
+        .image-top{
+            width: 45px;
+            position: relative;
+            top: -48px;
+            left: -22px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 50px;
+            width: 150px;
+
+        }
+        .vertical-desc{
+            position: relative;
+            top: 60px;
+            color: white;
+            width: 120px;
+            font-size: 15px;
+
+        }
+        footer{
+            background-color: #101553;
+
+        }
+        .footer{
+            display: flex;
+            padding: 20px 120px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        
+        }
+        .footer ul li a{
+            color: rgb(252, 246, 235);
+        }
+        .footer > div{
+            width: 220px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Zahran's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="#footer">Github</a> </li>
+                    <li> <a href="about.html">About</a> </li>
+                    <li> <a href="#footer">Contact Me</a> </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <span class=white>Zahran</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.jpg" alt="Image" class="src">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <span class="text-gray">Work I've done up to now</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="python.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Python Developer (2021-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        From building web applications with Flask to implementing data analysis and visualization with libraries like matplotlib, I have a diverse range of project experience.
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img src="front-end.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Front-End Developer (2020-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Using HTML, CSS, and JavaScript, I have created engaging and responsive web interfaces that deliver seamless user experiences.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="arduino_logo.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Arduino Programmer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Demonstrated expertise in microcontroller programming, sensor interfacing, PWM control, and motor robotics. 
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="pygame.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Game Developer (2022-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Demonstrated strong proficiency in game development, object-oriented programming, sprite handling, user input, and collision detection.
+                    </div>
+                </div>
+                
+                <div class="vertical">
+                    <img src="mySQL.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Database Assistant (2023-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Assisted in data entry, validation, and analysis, while supporting the database management team in optimizing performance and maintaining data integrity.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer" id="footer">
+            <div class="footer-first">
+                <h3>Zahran's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="https://github.com/zahran001" target="_blank">GitHub</a></li>
+                    <li><a href="mailto:zahran@usf.edu">zahran@usf.edu</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Software Developer','Web Developer','Graphic Designer'],
+          typeSpeed: 50,
+        });
+    </script>
+    
+</body>
+</html>
