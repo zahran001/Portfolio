@@ -1,3 +1,3 @@
 # Portfolio
-# Typed.js Library
-# Version Control and Hosting
+Typed.js Library
+Version Control and Hosting
